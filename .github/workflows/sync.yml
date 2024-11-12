@@ -3,7 +3,7 @@ name: Trigger Documentation Sync
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   trigger-doc-sync:
