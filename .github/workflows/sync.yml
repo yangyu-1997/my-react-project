@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Trigger sync_docs in documentation repository
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           curl -X POST -H "Authorization: token $PAT_TOKEN" \
           -H "Accept: application/vnd.github.everest-preview+json" \
